@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6c757d;
+}
+
+.r-btn {
+  padding: 5px 20px;
+  background-color: #ee8683 !important;
+  color: #fff !important;
+}
+
+::selection {
+  background-color: #ee8683;
+  color: #fff;
+}
+
+.r-p {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.content-mg {
+  margin: 10px 0;
+}
+.content-box * + * {
+  margin: 20px 0;
+}
+.bg-sec {
+  background: #f8f9fa;
+}
+.title-box {
+  max-width: 600px;
+  text-align: center;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Navigation---------------------------------------------------------------------------- */
+nav .navbar-brand {
+  font-size: 30px;
+  color: #fff;
+  transition: 0.5s all;
+}
+nav .navbar-nav li {
+  margin-left: 15px;
+}
+nav .navbar-nav li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+nav.r-nav {
+  background: transparent;
+  padding: 20px 0px;
+  transition: 0.5s all;
+}
+
+nav.r-nav.stickyadd {
+  background: #fff !important;
+  padding: 15px 0;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.5s all ease-in-out;
+}
+nav.stickyadd .navbar-brand {
+  color: #000;
+  font-size: 40px;
+  transition: 0.5s all;
+}
+nav.stickyadd .navbar-nav .nav-link {
+  color: #000 !important;
+}
+.navbar .hamburger {
+  color: #fff;
+}
+nav.stickyadd .hamburger {
+  color: #000;
+}
+
+nav *,
+header * {
+  animation-delay: 0.5s;
+}
+
+/* ---------- */
+
+/* Header -----------------------------------------------------------------------*/
+header {
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.vexus.com.tr/wp-content/uploads/2020/10/isletmenizi-eticarete-nasil-tasiyabilirsiniz-1024x576.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-slide-content {
+  height: 40vh;
+}
+.header-slide {
+  height: 30vh;
+}
+.content-box {
+  max-width: 700px;
+  color: #fff;
+}
+.content-box h4 {
+  font-size: 30px;
+}
+.content-box h1 {
+  font-size: 52px;
+}
+.content-box a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 5px 25px;
+}
+.content-box p {
+  color: #fff;
+}
+.content-box a:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.5s all;
+}
+.new{
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem;
+  color: black;
+  border-radius: 10px 0px 0px 10px;
+}
+.new p {
+  color: #6c757d;
+  font-size: 14px;
+}
+.new h1{
+  font-size: 30px;
+}
+.new-item {
+  background: #ddd;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+/* Experience ---------------------------------------------------------*/
+.experience .progress {
+  height: 10px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.progress-color {
+  background-color: #dddf7a !important;
+}
+.experience label {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* Service */
+
+.card,
+.card-header {
+  background: #f8f9fa !important;
+}
+
+.card-header {
+  border: none !important;
+}
+
+.career .card-header i {
+  font-size: 50px;
+}
+.service-border {
+  height: 2px;
+  width: 40px;
+  margin: 15px auto;
+  background: #a6a837;
+  transition: 0.5s all;
+}
+.career h5:hover + .service-border {
+  width: 100px;
+}
+
+.career p {
+  font-size: 16px;
+}
+
+.career .btn:hover {
+  color: #000 !important;
+  background: #eee !important;
+}
+
+/* Testimony */
+
+.testimony .test-item {
+  max-width: 500px;
+  margin: 50px auto;
+}
+.testimony .test-item .test-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.testimony .test-item i {
+  color: grey;
+}
+
+.test-item p.test-name {
+  font-size: 11px;
+}
+
+/* Media-------------------------------------------------------------------------------- */
+@media (min-width: 200px) and (max-width: 768px) {
+  .r-nav {
+    background: #fff !important;
+  }
+  .r-nav .container {
+    width: 85%;
+  }
+  nav .navbar-brand {
+    font-size: 30px;
+    color: #000;
+  }
+  .navbar .hamburger {
+    color: #000;
+  }
+  nav .navbar-nav .nav-link {
+    color: #000 !important;
+  }
+
+  .content-box h1 {
+    font-size: 30px;
+  }
+  .content-box p {
+    font-size: 16px;
+  }
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://www.vexus.com.tr/wp-content/uploads/2020/10/isletmenizi-eticarete-nasil-tasiyabilirsiniz-1024x576.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: -700px 0;
+  }
+}
+body {
+  background-color: #eee;
+  
+}
+
+.bdge {
+height: 21px;
+background-color: orange;
+color: #fff;
+font-size: 11px;
+padding: 8px;
+border-radius: 4px;
+line-height: 3px;
+}
+
+.comments {
+text-decoration: underline;
+text-underline-position: under;
+cursor: pointer;
+}
+
+.dot {
+height: 7px;
+width: 7px;
+margin-top: 3px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+}
+
+.hit-voting:hover {
+color: blue;
+}
+
+.hit-voting {
+cursor: pointer;
+}
+
+.basket {
+  width: 500px;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 80vh; 
+  overflow-y: auto; 
+}

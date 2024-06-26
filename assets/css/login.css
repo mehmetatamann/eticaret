@@ -1,0 +1,93 @@
+/* Global Stil */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(""); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.login_box {
+    text-align: center;
+    padding: 20px;
+}
+
+.login_header h1 {
+    color: #336699;
+    margin-bottom: 10px;
+}
+
+form {
+    text-align: left;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label {
+    margin-left: 5px;
+    color: #333;
+}
+
+input[type='submit'] {
+    width: 100%;
+    background-color: #336699;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: #2b5c8a;
+}
+
+a {
+    text-decoration: none;
+    color: #2b5c8a;
+}
+
+/* İkinci form görünümü */
+#second {
+    display: none;
+}
+
+.signup,
+.signin {
+    color: #777777;
+    font-size: 12px;
+}
+
+.signup:hover,
+.signin:hover {
+    text-decoration: underline;
+}
